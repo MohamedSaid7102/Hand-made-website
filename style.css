@@ -3,6 +3,7 @@
 :root {
   --nav-bar-color: #f7f7f7;
   --nav-bar-height: 5rem;
+  --headding-color: #6c3f8b;
 }
 
 *,
@@ -27,7 +28,7 @@ h2,
 h3 {
   margin-top: 3.5rem;
   margin-bottom: 2.5rem;
-  color: #6c3f8b;
+  color: var(--headding-color);
 }
 
 h1 {
@@ -53,6 +54,7 @@ li {
   font-weight: 400;
   font-size: 1.4rem;
   margin-bottom: 1.5rem;
+  color: #6f6f6f;
 }
 
 /* General style */
@@ -191,4 +193,50 @@ li {
 }
 .feature__img--black-shdow {
   box-shadow: 0 0 20px 5px rgb(56, 56, 56);
+}
+
+/* prices */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pricing.flex {
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  cursor: pointer;
+  text-align: center;
+}
+
+.card {
+  border: 2px solid var(--headding-color);
+  width: 27rem;
+  padding: 1.5rem;
+  transition: 400ms all ease-in-out;
+  padding-bottom: 0;
+}
+
+.card:hover {
+  background-color: var(--headding-color);
+  border: 2px solid #000;
+}
+
+.card:hover h2,
+.card:hover h3 {
+  color: #fff;
+}
+
+.card:hover p,
+.card:hover li {
+  color: #eee;
+}
+
+.card h2 {
+  margin-top: 0.5rem;
+}
+
+.card p {
+  margin-bottom: 0;
 }
