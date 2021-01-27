@@ -23,10 +23,11 @@ body {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   margin-top: 3.5rem;
   margin-bottom: 2.5rem;
-  color: #a04fd6;
+  color: #6c3f8b;
 }
 
 h1 {
@@ -36,11 +37,22 @@ h1 {
 h2 {
   font-size: 3rem;
 }
+
+h3 {
+  font-size: 2rem;
+  margin-top: 0.5rem;
+}
 p {
   font-weight: 400;
   font-size: 1.4rem;
   margin-bottom: 3rem;
   color: #6f6f6f;
+}
+
+li {
+  font-weight: 400;
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
 }
 
 /* General style */
@@ -128,16 +140,55 @@ p {
 @media screen and (min-width: 769px) {
   .grid-template-2x {
     grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
   }
 }
 
 #how-it-work {
   margin-top: 3rem;
+  margin-bottom: 3rem;
   border: 1px solid gray;
   padding: 0 2rem;
+  border-radius: 2px;
 }
 
 .illustration-vedio {
   align-self: center;
   justify-self: center;
+}
+
+/** features  */
+.purble-bakcground {
+  background-color: #6d3a8f;
+}
+
+.purble-bakcground h1,
+.purble-bakcground h2,
+.purble-bakcground h3 {
+  color: #fff;
+}
+
+.purble-bakcground p,
+.purble-bakcground li {
+  color: #eee;
+}
+
+.feature-section {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.feature-section .typo {
+  padding-left: 2rem;
+}
+
+.feature__img {
+  max-width: 600px;
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.feature__img--black-shdow {
+  box-shadow: 0 0 20px 5px rgb(56, 56, 56);
 }
