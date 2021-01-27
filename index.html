@@ -11,6 +11,8 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=optional"
       rel="stylesheet"
     />
+    <!--fot animation-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <!--header section-->
@@ -21,7 +23,7 @@
       <nav id="nav-bar">
         <ul>
           <li class="nav-link"><a href="#">Features</a></li>
-          <li class="nav-link"><a href="#">How It Works</a></li>
+          <li class="nav-link"><a href="#how-it-work">How It Works</a></li>
           <li class="nav-link"><a href="#">Pricing</a></li>
           <li class="nav-link"><a href="#">About Us</a></li>
           <li class="nav-link"><a href="#">Sign in</a></li>
@@ -37,9 +39,51 @@
         laudantium perferendis officia, voluptate laborum tempore id cumque
         doloribus aperiam repellendus eum.
       </p>
-      <div class="headding-img-container">
+      <div
+        class="headding-img-container"
+        data-aos="zoom-in"
+        data-aos-duration="800"
+      >
         <img src="images/Headding-photo.jpg" alt="Headding-photo" />
       </div>
     </section>
+    <section id="how-it-work" class="block grid grid-template-2x">
+      <div
+        class="illustration-sec"
+        data-aos="fade-up-right"
+        data-aos-delay="300"
+        data-aos-duration="1000"
+      >
+        <h2>How it works ?</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+          magnam ut, temporibus dolorum dolor est, nemo quis, accusantium
+          tempora eaque neque laborum. Ipsa, ullam in molestias enim molestiae
+          nihil deserunt ut facilis tenetur repudiandae similique. Accusamus
+          tempora ad officiis, ex voluptates consequuntur modi. Aut, recusandae
+          eveniet omnis officiis excepturi nulla.
+        </p>
+      </div>
+      <video
+        id="video"
+        width="500"
+        height="340"
+        autoplay
+        loop
+        class="illustration-vedio"
+        data-aos="fade-up-left"
+        data-aos-delay="300"
+        data-aos-duration="1000"
+      >
+        <source src="vedios/Feature-vedio.mp4" type="video/mp4" />
+        vedio illustrate how it work
+      </video>
+    </section>
+
+    <!--script-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

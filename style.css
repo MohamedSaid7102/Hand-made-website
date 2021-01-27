@@ -63,6 +63,7 @@ p {
   top: 0;
   overflow: hidden;
   backdrop-filter: blur(100px);
+  z-index: 1000;
 }
 
 /* header img */
@@ -117,4 +118,26 @@ p {
   width: 100%;
   border-radius: 2rem;
   box-shadow: 0 0 20px 5px lightgray;
+}
+
+/**how it work */
+.grid {
+  display: grid;
+}
+
+@media screen and (min-width: 769px) {
+  .grid-template-2x {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+#how-it-work {
+  margin-top: 3rem;
+  border: 1px solid gray;
+  padding: 0 2rem;
+}
+
+.illustration-vedio {
+  align-self: center;
+  justify-self: center;
 }
