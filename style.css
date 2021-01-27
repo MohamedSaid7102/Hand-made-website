@@ -1,7 +1,7 @@
 @import url("Normalize.css");
 /* Basic rules */
 :root {
-  --background-color: #d1d2d4;
+  --nav-bar-color: #f7f7f7;
   --nav-bar-height: 5rem;
 }
 
@@ -11,13 +11,49 @@
   box-sizing: border-box;
 }
 
+::selection {
+  background-color: #ea5bf7af;
+}
+
+/* Typography */
+
 body {
   font-size: 62.5%;
+  font-family: "Montserrat", sans-serif;
+}
+
+h1,
+h2 {
+  margin-top: 3.5rem;
+  margin-bottom: 2.5rem;
+  color: #a04fd6;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+p {
+  font-weight: 400;
+  font-size: 1.4rem;
+  margin-bottom: 3rem;
+  color: #6f6f6f;
+}
+
+/* General style */
+
+.block {
+  max-width: 1140px;
+  margin: auto;
 }
 
 /* headding style */
+
 #header {
-  background-color: var(--background-color);
+  background-color: var(--nav-bar-color);
   box-shadow: 0 0 11px 4px lightgray;
   display: flex;
   flex-wrap: nowrap;
@@ -26,6 +62,7 @@ body {
   position: sticky;
   top: 0;
   overflow: hidden;
+  backdrop-filter: blur(100px);
 }
 
 /* header img */
@@ -39,23 +76,45 @@ body {
 #nav-bar {
   align-self: center;
 }
+#nav-bar ul {
+  display: flex;
+}
 
 #nav-bar ul li {
   list-style: none;
   display: inline-block;
-  margin: 0 2rem;
-  padding: 2rem;
+  padding: 3.5rem;
   transition: background-color 0.5s;
   cursor: pointer;
 }
 
 #nav-bar ul li:hover {
-  background-color: #ffffff;
-  color: #222;
+  background-color: #a04fd6;
+}
+
+#nav-bar ul li:hover a {
+  color: #fff;
 }
 
 #nav-bar ul li a {
   text-decoration: none;
   color: #222;
   font-size: 1rem;
+  outline: none;
+}
+
+/* Heading info */
+.headding-info {
+  text-align: center;
+  margin-top: 6rem;
+}
+.headding-img-container {
+  max-height: 35rem;
+  max-width: 50rem;
+  margin: auto;
+}
+.headding-img-container > img {
+  width: 100%;
+  border-radius: 2rem;
+  box-shadow: 0 0 20px 5px lightgray;
 }
