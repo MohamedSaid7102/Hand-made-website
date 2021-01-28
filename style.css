@@ -241,6 +241,30 @@ li {
   margin-bottom: 0;
 }
 
+form {
+  text-align: center;
+  font-size: 2rem;
+  margin: 8rem;
+}
+
+form input {
+  border-radius: 1.5rem;
+  padding: 1rem;
+  outline: none;
+  font-size: 1rem;
+  color: var(--headding-color);
+  border: 1px solid gray;
+}
+.input-submit {
+  padding: 1.2rem 3rem;
+  cursor: pointer;
+  border-radius: 53px;
+  transition: 400ms all ease-in-out;
+}
+.input-submit:hover {
+  background-color: var(--headding-color);
+  color: #fff;
+}
 #footer {
   background-color: var(--nav-bar-color);
   padding: 1rem;
