@@ -13,24 +13,43 @@
     />
     <!--fot animation-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!--for font awesome icons -->
+    <link rel="stylesheet" href="playground-style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <!--header section-->
-    <header id="header">
-      <!--TODO: Change logo to match background color of header-->
-      <a href="/" class="header-img-link"
-        ><img src="images/logo.png" alt="hader logo" id="header-img"
-      /></a>
-      <nav id="nav-bar">
-        <ul>
-          <li class="nav-link"><a href="#features">Features</a></li>
-          <li class="nav-link"><a href="#how-it-work">How It Works</a></li>
-          <li class="nav-link"><a href="#prices">Pricing</a></li>
-          <li class="nav-link"><a href="#footer">About Us</a></li>
-          <li class="nav-link"><a href="#form">Sign in</a></li>
-        </ul>
-      </nav>
-    </header>
+    <!--navigation bar section-->
+    <!--in case we hit the bars icon the collapsible class will turn into collapsible--expanded
+    according to javaS code, take a look at the css code at  the class collapsible--expanded-->
+    <nav class="header header--style collapsible">
+      <div class="logo-toggle-sec">
+        <a href="/" class="logo-link"
+          ><img src="images/handmade-logo.png" alt="hader logo" id="header-img"
+        /></a>
+        <i class="fa fa-bars nav__toggler"></i>
+      </div>
+      <div class="navbar collapsible__content">
+        <a href="#features"><i class="fa fa-check"></i> Features</a>
+        <a href="#how-it-work"><i class="fa fa-globe"></i> How It Works</a>
+        <a href="#prices"><i class="fa fa-tag"></i> Pricing</a>
+        <a href="#footer"><i class="fa fa-address-card"></i> About Us</a>
+        <a href="#form"><i class="fa fa-fw fa-user"></i> Sign in</a>
+      </div>
+    </nav>
+    <!--banner img block-->
+    <section class="headding-img block">
+      <img
+        src="images/handmade-logo.png"
+        alt="hader logo"
+        class="heading-img"
+        data-aos="zoom-in"
+        data-aos-duration="500"
+      />
+    </section>
     <!--headding info section-->
     <section class="headding-info block">
       <h1 class="headding__header">Handcrafted, home-made masterpieces</h1>
@@ -272,6 +291,7 @@
     </section>
     <footer id="footer">copy right &copy; 2020 | Mohamed Shelf</footer>
     <!--script-->
+    <script src="js/main.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();

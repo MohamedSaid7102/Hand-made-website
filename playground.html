@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="playground-style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body style="height: 200vh">
+    <!--navigation bar section-->
+    <!--in case we hit the bars icon the collapsible class will turn into collapsible--expanded
+    according to javaS code, take a look at the css code at  the class collapsible--expanded-->
+    <nav class="header header--style collapsible">
+      <div class="logo-toggle-sec">
+        <a href="/" class="logo-link"
+          ><img src="images/handmade-logo.png" alt="hader logo" id="header-img"
+        /></a>
+        <i class="fa fa-bars nav__toggler"></i>
+      </div>
+      <div class="navbar collapsible__content">
+        <a href="#features"><i class="fa fa-check"></i> Features</a>
+        <a href="#how-it-work"><i class="fa fa-globe"></i> How It Works</a>
+        <a href="#prices"><i class="fa fa-tag"></i> Pricing</a>
+        <a href="#footer"><i class="fa fa-address-card"></i> About Us</a>
+        <a href="#form"><i class="fa fa-fw fa-user"></i> Sign in</a>
+      </div>
+    </nav>
+    <!--banner img block-->
+    <section class="headding-img block">
+      <img
+        src="images/handmade-logo.png"
+        alt="hader logo"
+        class="heading-img"
+        data-aos="zoom-in"
+        data-aos-duration="500"
+      />
+    </section>
+    <script src="js/main.js"></script>
+  </body>
+</html>

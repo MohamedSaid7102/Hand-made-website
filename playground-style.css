@@ -1,0 +1,188 @@
+@import url("Normalize.css");
+/* Basic rules */
+:root {
+  --nav-bar-color: #f7f7f7;
+  --nav-bar-height: 5rem;
+  --headding-color: #6c3f8b;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+::selection {
+  background-color: #ea5bf7af;
+}
+
+/* Typography */
+
+body {
+  font-size: 62.5%;
+  font-family: "Montserrat", sans-serif;
+  min-width: 250px;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 3.5rem;
+  margin-bottom: 2.5rem;
+  color: var(--headding-color);
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2rem;
+  margin-top: 0.5rem;
+}
+
+p {
+  font-weight: 400;
+  font-size: 1.4rem;
+  margin-bottom: 3rem;
+  color: #6f6f6f;
+}
+
+/* General style */
+
+.block {
+  max-width: 1140px;
+  margin: auto;
+}
+
+/* navigation bar section style */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header--style {
+  background-color: var(--nav-bar-color);
+  box-shadow: 0 0 11px 4px lightgray;
+}
+
+.logo-link > img {
+  max-height: var(--nav-bar-height);
+  object-fit: contain;
+  padding-left: 4rem;
+}
+
+.navbar {
+  float: right;
+}
+
+.navbar a {
+  float: left;
+  padding: 32px;
+  color: #6f6f6f;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background-color 0.5s;
+  outline: none;
+  border-radius: 15px 0;
+}
+
+.navbar a:hover {
+  background-color: #a04fd6;
+  color: #fff;
+}
+
+.header .nav__toggler {
+  display: none;
+}
+
+@media screen and (max-width: 974px) {
+  .header {
+    flex-direction: column;
+    position: relative;
+  }
+  .navbar,
+  .logo-link {
+    margin: auto;
+  }
+
+  .navbar {
+    position: sticky;
+    top: 0;
+  }
+  .logo-link {
+    outline: none;
+  }
+  .logo-link > img {
+    display: table;
+    margin: auto;
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  .header .nav__toggler {
+    display: block;
+    font-size: 2rem;
+  }
+  /** incase it's expanded */
+  .header.collapsible--expanded .nav__toggler {
+    opacity: 1;
+  }
+  .header.collapsible--expanded .collapsible__content {
+    display: block;
+  }
+  /******** */
+  .header {
+    align-items: center;
+  }
+  .navbar {
+    width: 100%;
+    text-align: center;
+  }
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    border-radius: 0;
+  }
+  .logo-toggle-sec .logo-link,
+  .nav__toggler {
+    margin: 0;
+    padding: 0 2rem;
+    cursor: pointer;
+  }
+  .collapsible__content {
+    display: none;
+  }
+  .nav__toggler {
+    opacity: 0.6;
+    transition: opacity 0.5s;
+  }
+  .logo-toggle-sec {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+/* to translate the heading img dowm a littl */
+@media screen and (max-width: 628px) {
+  .headding-img > img {
+    transform: translateY(80px);
+  }
+}
+/** banner img block */
+.heading-img {
+  width: 100%;
+  position: relative;
+  top: -4.5rem;
+}
