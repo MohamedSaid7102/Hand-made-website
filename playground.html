@@ -11,33 +11,37 @@
     />
   </head>
   <body style="height: 200vh">
-    <!--navigation bar section-->
-    <!--in case we hit the bars icon the collapsible class will turn into collapsible--expanded
-    according to javaS code, take a look at the css code at  the class collapsible--expanded-->
-    <nav class="header header--style collapsible">
-      <div class="logo-toggle-sec">
-        <a href="/" class="logo-link"
-          ><img src="images/handmade-logo.png" alt="hader logo" id="header-img"
-        /></a>
-        <i class="fa fa-bars nav__toggler"></i>
+    <!--how it work-->
+    <section class="how-it-work block grid grid-template-2x">
+      <div
+        class="illustration-sec"
+        data-aos="fade-up-right"
+        data-aos-delay="300"
+        data-aos-duration="1000"
+      >
+        <h2 class="illustration__heading">How it works ?</h2>
+        <p class="illustration__paragraph">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+          magnam ut, temporibus dolorum dolor est, nemo quis, accusantium
+          tempora eaque neque laborum. Ipsa, ullam in molestias enim molestiae
+          nihil deserunt ut facilis tenetur repudiandae similique. Accusamus
+          tempora ad officiis.
+        </p>
       </div>
-      <div class="navbar collapsible__content">
-        <a href="#features"><i class="fa fa-check"></i> Features</a>
-        <a href="#how-it-work"><i class="fa fa-globe"></i> How It Works</a>
-        <a href="#prices"><i class="fa fa-tag"></i> Pricing</a>
-        <a href="#footer"><i class="fa fa-address-card"></i> About Us</a>
-        <a href="#form"><i class="fa fa-fw fa-user"></i> Sign in</a>
-      </div>
-    </nav>
-    <!--banner img block-->
-    <section class="headding-img block">
-      <img
-        src="images/handmade-logo.png"
-        alt="hader logo"
-        class="heading-img"
-        data-aos="zoom-in"
-        data-aos-duration="500"
-      />
+      <video
+        id="video"
+        width="500"
+        height="340"
+        autoplay
+        loop
+        class="illustration-vedio"
+        data-aos="fade-up-left"
+        data-aos-delay="300"
+        data-aos-duration="1000"
+      >
+        <source src="vedios/Feature-vedio.mp4" type="video/mp4" />
+        vedio illustrate how it work
+      </video>
     </section>
     <script src="js/main.js"></script>
   </body>
