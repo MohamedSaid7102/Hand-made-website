@@ -354,6 +354,12 @@ form input[type="email"] {
   white-space: nowrap;
 }
 
+.illustration__paragraph q {
+  padding: 1rem;
+  font-style: italic;
+  display: block;
+}
+
 .illustration-vedio {
   align-self: center;
   justify-self: center;
@@ -495,6 +501,80 @@ form input[type="email"] {
     row-gap: 2rem;
     align-items: center;
     height: inherit;
+  }
+}
+
+/** about and buy */
+.buy form {
+  margin: 0 2rem 2rem 0;
+}
+
+/** to hide increment  */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.about-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+.about-wrapper input {
+  margin-bottom: 2rem;
+}
+@media screen and (max-width: 1066px) and (min-width: 922px) {
+  .about-wrapper {
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 858px) {
+  .illustration-sec {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 764px) {
+  .about-wrapper {
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 1fr;
+  }
+  .about-wrapper input {
+    width: 100%;
+    height: 5rem;
+    margin: 1rem;
+  }
+
+  .buy form {
+    margin: auto;
+    padding: 0;
+  }
+  .buy img {
+    transform: scale(0.8);
+  }
+}
+
+@media screen and (max-width: 372px) {
+  .buy .illustration__heading,
+  .buy .illustration__paragraph {
+    font-size: 1.3rem;
+  }
+  .buy form {
+    margin: auto;
+    margin-left: -47px;
+    transform: scale(0.7);
+  }
+  .buy img {
+    margin-left: 19px;
   }
 }
 
