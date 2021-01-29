@@ -22,6 +22,7 @@ body {
   font-size: 62.5%;
   font-family: "Montserrat", sans-serif;
   min-width: 250px;
+  overflow-x: hidden;
 }
 
 h1,
@@ -569,8 +570,6 @@ input[type="number"] {
     font-size: 1.3rem;
   }
   .buy form {
-    margin: auto;
-    margin-left: -47px;
     transform: scale(0.7);
   }
   .buy img {
