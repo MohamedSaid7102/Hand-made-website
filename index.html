@@ -1,25 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-
     <!--SEO-->
     <!--all meta tags-->
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<!--for SEO (Search Engin Optmization)-->
-<meta
-name="description"
-content="Product landing page for a home Hand made products, nice prices, easey to deal with!"
-/>
-<!--Open Graph meta tags-->
-<meta property="og:title" content="Product Landing Page" />
-<meta property="og:type" content="service page" />
-<meta property="og:description" content="Product landing page for a home Hand made products, nice prices, easey to deal with!" />
-<meta property="og:url" content="/" />
-<meta
-property="og:image"
-content="images/handmade-logo.png"
-/>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--for SEO (Search Engin Optmization)-->
+    <meta
+      name="description"
+      content="Product landing page for a home Hand made products, nice prices, easey to deal with!"
+    />
+    <!--Open Graph meta tags-->
+    <meta property="og:title" content="Product Landing Page" />
+    <meta property="og:type" content="service page" />
+    <meta
+      property="og:description"
+      content="Product landing page for a home Hand made products, nice prices, easey to deal with!"
+    />
+    <meta property="og:url" content="/" />
+    <meta property="og:image" content="images/handmade-logo.png" />
 
     <title>Product Landing Page</title>
     <link rel="stylesheet" href="style.css" />
@@ -58,7 +57,7 @@ content="images/handmade-logo.png"
       </div>
     </nav>
     <!--banner img block-->
-    <section class="headding-img block">
+    <div class="headding-img block">
       <img
         src="images/handmade-logo.png"
         alt="hader logo"
@@ -66,7 +65,7 @@ content="images/handmade-logo.png"
         data-aos="zoom-in"
         data-aos-duration="500"
       />
-    </section>
+    </div>
     <!--headding info section-->
     <section class="page-info block">
       <h1 class="headding__header">Handcrafted, home-made masterpieces</h1>
@@ -87,8 +86,9 @@ content="images/handmade-logo.png"
     <!--sign in section-->
     <form action="#" id="form" class="form--border-style">
       <div class="email-content">
-        <label for="email" class="email__lable">E-mail</label>
+        <label for="email-input" class="email__lable">E-mail</label>
         <input
+          id="email-input"
           type="email"
           placeholder="Enter your email"
           class="email-input"
@@ -98,303 +98,305 @@ content="images/handmade-logo.png"
     </form>
     <!--how it work-->
     <section id="how-it-work" class="how-it-work block grid grid-template-2x">
-        <div
-          class="illustration-sec"
-          data-aos="fade-up-right"
-          data-aos-delay="300"
-          data-aos-duration="1000"
-        >
-          <h2 class="illustration__heading">How it works ?</h2>
-          <p class="illustration__paragraph">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus
-            magnam ut, temporibus dolorum dolor est, nemo quis, accusantium
-            tempora eaque neque laborum. Ipsa, ullam in molestias enim molestiae
-            nihil deserunt ut facilis tenetur repudiandae similique. Accusamus
-            tempora ad officiis.
-          </p>
-        </div>
-        <video
-          id="video"
-          width="500"
-          height="340"
-          autoplay
-          loop
-          class="illustration-vedio"
-          data-aos="fade-up-left"
-          data-aos-delay="300"
-          data-aos-duration="1000"
-        >
-          <source src="vedios/Feature-vedio.mp4" type="video/mp4" />
-          vedio illustrate how it work
-        </video>
+      <div
+        class="illustration-sec"
+        data-aos="fade-up-right"
+        data-aos-delay="300"
+        data-aos-duration="1000"
+      >
+        <h2 class="illustration__heading">How it works ?</h2>
+        <p class="illustration__paragraph">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+          magnam ut, temporibus dolorum dolor est, nemo quis, accusantium
+          tempora eaque neque laborum. Ipsa, ullam in molestias enim molestiae
+          nihil deserunt ut facilis tenetur repudiandae similique. Accusamus
+          tempora ad officiis.
+        </p>
+      </div>
+      <video
+        id="video"
+        width="500"
+        height="340"
+        autoplay
+        loop
+        class="illustration-vedio"
+        data-aos="fade-up-left"
+        data-aos-delay="300"
+        data-aos-duration="1000"
+      >
+        <source src="vedios/Feature-vedio.mp4" type="video/mp4" />
+        vedio illustrate how it work
+      </video>
     </section>
-      <!--feature section-->
-      <section id="features" class="purble-bakcground">
-        <div class="block">
-          <!--1-->
-          <div class="feature-section grid grid-template-2x">
-            <div
-              class="typo"
-              data-aos="fade-right"
-              data-aos-duration="700"
-              data-aos-delay="100"
-            >
-              <h3 class="typo__heading">Beautiful packaging</h3>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Reprehenderit voluptate, corrupti nulla reiciendis aspernatur
-                cumque?
-              </p>
-              <ol>
-                <li>Lorem ipsum dolor sit.</li>
-                <li>Lorem ipsum dolor sit.</li>
-                <li>Lorem ipsum dolor sit.</li>
-              </ol>
-              <p>
-                Reprehenderit voluptate, corrupti nulla reiciendis aspernatur
-                cumque?
-              </p>
-            </div>
-            <img
-              src="images/feature-1.jpg"
-              alt=""
-              class="feature__img feature__img--black-shdow"
-              data-aos="fade-left"
-              data-aos-duration="700"
-              data-aos-delay="100"
-            />
+    <!--feature section-->
+    <section id="features" class="purble-bakcground">
+      <div class="block">
+        <!--1-->
+        <div class="feature-section grid grid-template-2x">
+          <div
+            class="typo"
+            data-aos="fade-right"
+            data-aos-duration="700"
+            data-aos-delay="100"
+          >
+            <h3 class="typo__heading">Beautiful packaging</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Reprehenderit voluptate, corrupti nulla reiciendis aspernatur
+              cumque?
+            </p>
+            <ol>
+              <li>Lorem ipsum dolor sit.</li>
+              <li>Lorem ipsum dolor sit.</li>
+              <li>Lorem ipsum dolor sit.</li>
+            </ol>
+            <p>
+              Reprehenderit voluptate, corrupti nulla reiciendis aspernatur
+              cumque?
+            </p>
           </div>
-          <!--2-->
-          <div class="feature-section grid grid-template-2x">
-            <div
-              class="typo"
-              data-aos="fade-left"
-              data-aos-duration="700"
-              data-aos-delay="100"
-            >
-              <h3 class="typo__heading">fast delever</h3>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Reprehenderit voluptate, corrupti nulla reiciendis aspernatur
-                cumque?
-              </p>
-              <ol>
-                <li>Lorem ipsum dolor sit.</li>
-                <li>Lorem ipsum dolor sit.</li>
-                <li>Lorem ipsum dolor sit.</li>
-              </ol>
-              <p>
-                Reprehenderit voluptate, corrupti nulla reiciendis aspernatur
-                cumque?
-              </p>
-            </div>
-            <img
-              src="images/feature-2.jpg"
-              alt=""
-              class="feature__img feature__img--black-shdow"
-              data-aos="fade-right"
-              data-aos-duration="700"
-              data-aos-delay="100"
-            />
-          </div>
-          <!--3-->
-          <div class="feature-section grid grid-template-2x">
-            <div
-              class="typo"
-              data-aos="fade-right"
-              data-aos-duration="700"
-              data-aos-delay="100"
-            >
-              <h3 class="typo__heading">on purpose</h3>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Reprehenderit voluptate, corrupti nulla reiciendis aspernatur
-                cumque?
-              </p>
-              <ol>
-                <li>Lorem ipsum dolor sit.</li>
-                <li>Lorem ipsum dolor sit.</li>
-                <li>Lorem ipsum dolor sit.</li>
-              </ol>
-              <p>
-                Reprehenderit voluptate, corrupti nulla reiciendis aspernatur
-                cumque?
-              </p>
-            </div>
-            <img
-              src="images/feature-3.jpg"
-              alt=""
-              class="feature__img feature__img--black-shdow"
-              data-aos="fade-left"
-              data-aos-duration="700"
-              data-aos-delay="100"
-            />
-          </div>
-          <!--4-->
-          <div class="feature-section grid grid-template-2x">
-            <div
-              class="typo"
-              data-aos="fade-left"
-              data-aos-duration="700"
-              data-aos-delay="100"
-            >
-              <h3 class="typo__heading">Good material</h3>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Reprehenderit voluptate, corrupti nulla reiciendis aspernatur
-                cumque?
-              </p>
-              <ol>
-                <li>Lorem ipsum dolor sit.</li>
-                <li>Lorem ipsum dolor sit.</li>
-                <li>Lorem ipsum dolor sit.</li>
-              </ol>
-              <p>
-                Reprehenderit voluptate, corrupti nulla reiciendis aspernatur
-                cumque?
-              </p>
-            </div>
-            <img
-              src="images/feature-4.jpg"
-              alt=""
-              class="feature__img feature__img--black-shdow"
-              data-aos="fade-right"
-              data-aos-duration="700"
-              data-aos-delay="100"
-            />
-          </div>
+          <img
+            src="images/feature-1.jpg"
+            alt=""
+            class="feature__img feature__img--black-shdow"
+            data-aos="fade-left"
+            data-aos-duration="700"
+            data-aos-delay="100"
+          />
         </div>
-      </section>
-   <!--prices secction-->
-   <section id="prices" class="pricing flex" data-aos="fade-up" data-aos-duration="600" data-aos-delay="300">
-    <!--1-->
-    <div class="card" >
-      <h2>Tenor Trombone</h2>
-      <h3>$900</h3>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae
-        quaerat similique tempore! Perferendis cum eius delectus.
-        <ul>
-          <li>Item1</li>
-        </ul>
-      </p>
-<p>        quaerat similique tempore! Perferendis cum eius delectus.
-</p> 
-   </div>
-   <!--2-->
-    <div class="card">
-      <h2>Bass Trombone</h2>
-      <h3>$600</h3>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae
-        quaerat similique tempore! Perferendis cum eius delectus.
-        <ul>
-          <li>Item1</li>
-          <li>Item2</li>
-        </ul>
-      </p>
-      <p>        quaerat similique tempore! Perferendis cum eius delectus.
-      </p> 
-    </div>
-    <!--3-->
-    <div class="card">
-      <h2>Valve Trombone</h2>
-      <h3>$300</h3>
-      <p>
-        quaerat similique tempore! Perferendis cum eius delectus.
-        <ul>
-          <li>Item1</li>
-          <li>Item2</li>
-        </ul>
-        <p>                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae
+        <!--2-->
+        <div class="feature-section grid grid-template-2x">
+          <div
+            class="typo"
+            data-aos="fade-left"
+            data-aos-duration="700"
+            data-aos-delay="100"
+          >
+            <h3 class="typo__heading">fast delever</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Reprehenderit voluptate, corrupti nulla reiciendis aspernatur
+              cumque?
+            </p>
+            <ol>
+              <li>Lorem ipsum dolor sit.</li>
+              <li>Lorem ipsum dolor sit.</li>
+              <li>Lorem ipsum dolor sit.</li>
+            </ol>
+            <p>
+              Reprehenderit voluptate, corrupti nulla reiciendis aspernatur
+              cumque?
+            </p>
+          </div>
+          <img
+            src="images/feature-2.jpg"
+            alt=""
+            class="feature__img feature__img--black-shdow"
+            data-aos="fade-right"
+            data-aos-duration="700"
+            data-aos-delay="100"
+          />
+        </div>
+        <!--3-->
+        <div class="feature-section grid grid-template-2x">
+          <div
+            class="typo"
+            data-aos="fade-right"
+            data-aos-duration="700"
+            data-aos-delay="100"
+          >
+            <h3 class="typo__heading">on purpose</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Reprehenderit voluptate, corrupti nulla reiciendis aspernatur
+              cumque?
+            </p>
+            <ol>
+              <li>Lorem ipsum dolor sit.</li>
+              <li>Lorem ipsum dolor sit.</li>
+              <li>Lorem ipsum dolor sit.</li>
+            </ol>
+            <p>
+              Reprehenderit voluptate, corrupti nulla reiciendis aspernatur
+              cumque?
+            </p>
+          </div>
+          <img
+            src="images/feature-3.jpg"
+            alt=""
+            class="feature__img feature__img--black-shdow"
+            data-aos="fade-left"
+            data-aos-duration="700"
+            data-aos-delay="100"
+          />
+        </div>
+        <!--4-->
+        <div class="feature-section grid grid-template-2x">
+          <div
+            class="typo"
+            data-aos="fade-left"
+            data-aos-duration="700"
+            data-aos-delay="100"
+          >
+            <h3 class="typo__heading">Good material</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Reprehenderit voluptate, corrupti nulla reiciendis aspernatur
+              cumque?
+            </p>
+            <ol>
+              <li>Lorem ipsum dolor sit.</li>
+              <li>Lorem ipsum dolor sit.</li>
+              <li>Lorem ipsum dolor sit.</li>
+            </ol>
+            <p>
+              Reprehenderit voluptate, corrupti nulla reiciendis aspernatur
+              cumque?
+            </p>
+          </div>
+          <img
+            src="images/feature-4.jpg"
+            alt=""
+            class="feature__img feature__img--black-shdow"
+            data-aos="fade-right"
+            data-aos-duration="700"
+            data-aos-delay="100"
+          />
+        </div>
+      </div>
+    </section>
+    <!--prices secction-->
+    <section
+      id="prices"
+      class="pricing flex"
+      data-aos="fade-up"
+      data-aos-duration="600"
+      data-aos-delay="300"
+    >
+      <!--1-->
+      <div class="card">
+        <h2>Tenor Trombone</h2>
+        <h3>$900</h3>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae
           quaerat similique tempore! Perferendis cum eius delectus.
-        </p> 
-      </p>
-    </div>
-<!--4-->
-<div class="card">
-  <h2>Valve Trombone</h2>
-  <h3>$200</h3>
-  <p>
-    quaerat similique tempore! Perferendis cum eius delectus.
-    <ul>
-      <li>Item1</li>
-      <li>Item2</li>
-    </ul>
-    <p>                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae
-      quaerat similique tempore! Perferendis cum eius delectus.
-    </p> 
-  </p>
-</div>
-<!--5-->
-<div class="card">
-  <h2>Valve Trombone</h2>
-  <h3>$100</h3>
-  <p>
-    quaerat similique tempore! Perferendis cum eius delectus.
-    <ul>
-      <li>Item1</li>
-      <li>Item2</li>
-    </ul>
-    <p>                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae
-      quaerat similique tempore! Perferendis cum eius delectus.
-    </p> 
-  </p>
-</div>
-  </section>
-      <!--contackt & buy work-->
-      <section id="about&buy" class="buy how-it-work block grid grid-template-2x">
-        <div
-          class="illustration-sec"
-          data-aos="fade-up-right"
-          data-aos-delay="300"
-          data-aos-duration="1000"
-        >
-          <h2 class="illustration__heading">About the company</h2>
-          <p class="illustration__paragraph">
-            The company was founded in 1990, in Egypt.<br /><br />
-            our passion
-            <q>to provide a good quality products for all human beings</q>
-            To contact with us or buy ours<br />
-            enter your information and we will contact you: <br /><br />
-          </p>
-          <form action="#">
-            <div class="about-wrapper">
-              <input
-                type="number"
-                name="phone"
-                id="phone-number"
-                placeholder="Enter your phone numer"
-              />
-              <input
-                type="text"
-                name="name"
-                id="name"
-                placeholder="Enter your name"
-              />
-              <input
-                type="text"
-                name="name"
-                id="name"
-                placeholder="Enter your name"
-              />
-              <input
-                type="submit"
-                name="submit"
-                value="submit"
-                class="input-submit"
-              />
-            </div>
-          </form>
-        </div>
-        <img
-          src="images/about-photo.jpg"
-          class="illustration-vedio"
-          data-aos="fade-up-left"
-          data-aos-delay="300"
-          data-aos-duration="1000"
-        />
-      </section>
+        </p>
+        <ul>
+          <li>Item1</li>
+        </ul>
+        <p>quaerat similique tempore! Perferendis cum eius delectus.</p>
+      </div>
+      <!--2-->
+      <div class="card">
+        <h2>Bass Trombone</h2>
+        <h3>$600</h3>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae
+          quaerat similique tempore! Perferendis cum eius delectus.
+        </p>
+        <ul>
+          <li>Item1</li>
+          <li>Item2</li>
+        </ul>
+        <p>quaerat similique tempore! Perferendis cum eius delectus.</p>
+      </div>
+      <!--3-->
+      <div class="card">
+        <h2>Valve Trombone</h2>
+        <h3>$300</h3>
+        <p>quaerat similique tempore! Perferendis cum eius delectus.</p>
+        <ul>
+          <li>Item1</li>
+          <li>Item2</li>
+        </ul>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae
+          quaerat similique tempore! Perferendis cum eius delectus.
+        </p>
+      </div>
+      <!--4-->
+      <div class="card">
+        <h2>Valve Trombone</h2>
+        <h3>$200</h3>
+        <p>quaerat similique tempore! Perferendis cum eius delectus.</p>
+        <ul>
+          <li>Item1</li>
+          <li>Item2</li>
+        </ul>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae
+          quaerat similique tempore! Perferendis cum eius delectus.
+        </p>
+      </div>
+      <!--5-->
+      <div class="card">
+        <h2>Valve Trombone</h2>
+        <h3>$100</h3>
+        <p>quaerat similique tempore! Perferendis cum eius delectus.</p>
+        <ul>
+          <li>Item1</li>
+          <li>Item2</li>
+        </ul>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae
+          quaerat similique tempore! Perferendis cum eius delectus.
+        </p>
+      </div>
+    </section>
+    <!--contackt & buy work-->
+    <section id="about&buy" class="buy how-it-work block grid grid-template-2x">
+      <div
+        class="illustration-sec"
+        data-aos="fade-up-right"
+        data-aos-delay="300"
+        data-aos-duration="1000"
+      >
+        <h2 class="illustration__heading">About the company</h2>
+        <p class="illustration__paragraph">
+          The company was founded in 1990, in Egypt.<br /><br />
+          our passion
+          <q>to provide a good quality products for all human beings</q>
+          To contact with us or buy ours<br />
+          enter your information and we will contact you: <br /><br />
+        </p>
+        <form action="#">
+          <div class="about-wrapper">
+            <input
+              type="number"
+              name="phone"
+              id="phone-number"
+              placeholder="Enter your phone numer"
+            />
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Enter your name"
+            />
+            <input
+              type="text"
+              name="email"
+              id="email"
+              placeholder="Enter your email"
+            />
+            <input
+              type="submit"
+              name="submit"
+              value="submit"
+              class="input-submit"
+            />
+          </div>
+        </form>
+      </div>
+      <img
+        src="images/about-photo.jpg"
+        class="illustration-vedio"
+        data-aos="fade-up-left"
+        data-aos-delay="300"
+        data-aos-duration="1000"
+        alt="description photo"
+      />
+    </section>
     <footer id="footer">Copyright &copy; 2020 | Mohamed Shelf</footer>
     <!--script-->
     <script src="js/main.js"></script>

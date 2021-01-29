@@ -458,7 +458,6 @@ form input[type="email"] {
   width: 27rem;
   padding: 1.5rem;
   transition: 400ms all ease-in-out;
-  padding-bottom: 0;
 }
 
 .card h2 {
