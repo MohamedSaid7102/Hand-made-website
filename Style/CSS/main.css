@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,400;0,600;1,200&display=swap");
 /* Basic rules */
 :root {
   --nav-bar-color: #f7f7f7;
@@ -11,15 +12,18 @@
   box-sizing: border-box;
 }
 
+::-moz-selection {
+  background-color: #ea5bf7af;
+}
+
 ::selection {
   background-color: #ea5bf7af;
 }
 
 /* Typography */
-
 body {
   font-size: 62.5%;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat Alternates", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   min-width: 250px;
   overflow-x: hidden;
 }
@@ -74,6 +78,7 @@ li {
   p {
     font-size: 1rem;
   }
+
   li {
     font-size: 1rem;
     margin-bottom: 1rem;
@@ -96,9 +101,9 @@ li {
 @media screen and (min-width: 936px) {
   .grid-template-2x {
     grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
   }
 }
-
 .purble-bakcground {
   background-color: #6d3a8f;
 }
@@ -112,10 +117,10 @@ li {
 }
 
 /* navigation bar section style */
-
 .header {
   display: flex;
   justify-content: space-between;
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -128,15 +133,22 @@ li {
 
 .logo-link > img {
   max-height: var(--nav-bar-height);
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   padding-left: 4rem;
 }
 
 .navbar {
   float: right;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .navbar a {
+  white-space: nowrap;
+  display: flex;
+  gap: 1rem;
   float: left;
   padding: 32px;
   color: #6f6f6f;
@@ -147,7 +159,17 @@ li {
   border-radius: 15px 0;
 }
 
-.navbar a:hover {
+@media (max-width: 1044px) {
+  .navbar a {
+    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -o-transform: scale(0.8);
+  }
+}
+.navbar a:hover,
+.navbar a:focus {
   background-color: #a04fd6;
   color: #fff;
 }
@@ -156,69 +178,81 @@ li {
   display: none;
 }
 
-@media screen and (max-width: 974px) {
+@media screen and (max-width: 1037px) {
   .header {
     flex-direction: column;
     position: relative;
   }
+
   .navbar,
-  .logo-link {
+.logo-link {
     margin: auto;
   }
 
   .navbar {
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
   }
+
   .logo-link {
     outline: none;
   }
+
   .logo-link > img {
     display: table;
     margin: auto;
     padding-left: 0;
   }
 }
-
 @media screen and (max-width: 790px) {
   .header .nav__toggler {
     display: block;
     font-size: 2rem;
   }
+
   /** incase it's expanded */
   .header.collapsible--expanded .nav__toggler {
     opacity: 1;
   }
+
   .header.collapsible--expanded .collapsible__content {
     display: block;
   }
+
   /******** */
   .header {
     align-items: center;
   }
+
   .navbar {
     width: 100%;
     text-align: center;
   }
+
   .navbar a {
     float: none;
     display: block;
     width: 100%;
     border-radius: 0;
   }
+
   .logo-toggle-sec .logo-link,
-  .nav__toggler {
+.nav__toggler {
     margin: 0;
     padding: 0 2rem;
     cursor: pointer;
   }
+
   .collapsible__content {
     display: none;
   }
+
   .nav__toggler {
     opacity: 0.6;
     transition: opacity 0.5s;
   }
+
   .logo-toggle-sec {
     width: 100%;
     display: flex;
@@ -244,13 +278,12 @@ li {
     padding-top: 8rem;
   }
 }
-
 /**  Page info syle */
-
 /* Heading info */
 .page-info {
   text-align: center;
 }
+
 .headding-img-container {
   max-height: 35rem;
   max-width: 50rem;
@@ -265,12 +298,13 @@ li {
 }
 
 /** sing in block */
-
 form {
   font-size: 2rem;
   margin: 5rem auto;
   display: flex;
   flex-wrap: wrap;
+  width: -webkit-max-content;
+  width: -moz-max-content;
   width: max-content;
 }
 
@@ -295,13 +329,15 @@ form input {
   margin: 0 1rem;
 }
 
-form input[type="email"] {
+form input[type=email] {
   color: var(--headding-color);
 }
+
 .input-submit {
   cursor: pointer;
   transition: 400ms all ease-in-out;
 }
+
 .input-submit:hover {
   background-color: var(--headding-color);
   color: #fff;
@@ -317,20 +353,24 @@ form input[type="email"] {
   .form--border-style {
     border: none;
   }
+
   form {
     flex-direction: column;
     padding: 2rem;
     width: -moz-available;
     margin-top: 0;
   }
+
   .email-content {
     flex-direction: column;
     width: 100%;
     margin: auto;
   }
+
   .email-input {
     width: 100%;
   }
+
   .email-content .email__lable {
     margin-bottom: 2rem;
   }
@@ -340,9 +380,7 @@ form input[type="email"] {
     margin: 2rem auto;
   }
 }
-
 /**how it works */
-
 .how-it-work {
   margin: 3rem auto;
   border: 1px solid gray;
@@ -378,23 +416,28 @@ form input[type="email"] {
     padding-left: 0.5rem;
     border: none;
   }
+
   form {
     margin-bottom: 0;
   }
+
   .illustration__heading {
     padding-top: 0;
   }
+
   .illustration-vedio {
     margin-top: 1.5rem;
     padding-left: 0;
     padding-bottom: 1.5rem;
+    height: -webkit-max-content;
+    height: -moz-max-content;
     height: max-content;
   }
+
   .illustration__paragraph {
     margin-bottom: 0;
   }
 }
-
 /**Feature block */
 .feature-section {
   padding: 3rem 2rem;
@@ -409,7 +452,6 @@ form input[type="email"] {
     order: 0;
   }
 }
-
 .feature-section .typo {
   padding-left: 2rem;
   padding-right: 1rem;
@@ -425,13 +467,15 @@ form input[type="email"] {
   max-width: 600px;
   width: 100%;
   max-height: 500px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 20px;
   justify-self: center;
   align-self: center;
 }
+
 .feature__img--black-shdow {
-  box-shadow: 0 0 20px 3px rgb(56, 56, 56);
+  box-shadow: 0 0 20px 3px #383838;
 }
 
 @media screen and (max-width: 400px) {
@@ -439,7 +483,6 @@ form input[type="email"] {
     padding-left: 0;
   }
 }
-
 /* prices */
 .pricing.flex {
   flex-wrap: wrap;
@@ -447,7 +490,8 @@ form input[type="email"] {
   margin: 10rem auto;
   cursor: pointer;
   text-align: center;
-  column-gap: 1rem;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
   row-gap: 2.3rem;
   padding: 0 2rem;
 }
@@ -489,11 +533,11 @@ form input[type="email"] {
     padding: 0;
     line-height: 2;
   }
+
   .pricing.flex {
     align-content: stretch;
   }
 }
-
 @media screen and (max-width: 1014px) {
   .pricing.flex {
     flex-direction: column;
@@ -502,7 +546,6 @@ form input[type="email"] {
     height: inherit;
   }
 }
-
 /** about and buy */
 .buy form {
   margin: 0 2rem 2rem 0;
@@ -517,7 +560,7 @@ input::-webkit-inner-spin-button {
 }
 
 /* Firefox */
-input[type="number"] {
+input[type=number] {
   -moz-appearance: textfield;
 }
 
@@ -526,27 +569,28 @@ input[type="number"] {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
 }
+
 .about-wrapper input {
   margin-bottom: 2rem;
 }
+
 @media screen and (max-width: 1066px) and (min-width: 922px) {
   .about-wrapper {
     grid-template-rows: repeat(4, 1fr);
     grid-template-columns: 1fr;
   }
 }
-
 @media screen and (max-width: 858px) {
   .illustration-sec {
     text-align: center;
   }
 }
-
 @media screen and (max-width: 764px) {
   .about-wrapper {
     grid-template-rows: repeat(4, 1fr);
     grid-template-columns: 1fr;
   }
+
   .about-wrapper input {
     width: 100%;
     height: 5rem;
@@ -557,24 +601,25 @@ input[type="number"] {
     margin: auto;
     padding: 0;
   }
+
   .buy img {
     transform: scale(0.8);
   }
 }
-
 @media screen and (max-width: 372px) {
   .buy .illustration__heading,
-  .buy .illustration__paragraph {
+.buy .illustration__paragraph {
     font-size: 1.3rem;
   }
+
   .buy form {
     transform: scale(0.7);
   }
+
   .buy img {
     margin-left: 19px;
   }
 }
-
 #footer {
   background-color: var(--nav-bar-color);
   padding: 1rem;
@@ -582,3 +627,18 @@ input[type="number"] {
   font-size: 1rem;
   letter-spacing: 1.5;
 }
+
+.under-constructing {
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+  text-align: center;
+}
+.under-constructing .under-constructing__messege {
+  color: #333;
+  font-weight: 300;
+}
+.under-constructing .under-constructing__img {
+  width: 100%;
+  max-width: 800px;
+}/*# sourceMappingURL=main.css.map */

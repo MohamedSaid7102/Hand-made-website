@@ -18,16 +18,13 @@
       content="Product landing page for a home Hand made products, nice prices, easey to deal with!"
     />
     <meta property="og:url" content="/" />
-    <meta property="og:image" content="images/handmade-logo.png" />
+    <meta property="og:image" content="media/img/handmade-logo.png" />
 
-    <title>Product Landing Page</title>
-    <link rel="stylesheet" href="Normalize.css" />
-    <link rel="stylesheet" href="style.css" />
-    <!--importing fonts from google font-->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <title>Bakary</title>
+    <link rel="stylesheet" href="Style/CSS/main.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=optional"
-      rel="stylesheet"
+      rel="icon"
+      href="https://cdn-icons-png.flaticon.com/128/5167/5167614.png"
     />
     <!--fot animation-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
@@ -38,29 +35,37 @@
     />
   </head>
   <body>
-    <!--header section-->
     <!--navigation bar section-->
     <!--in case we hit the bars icon the collapsible class will turn into collapsible--expanded
     according to javaS code, take a look at the css code at  the class collapsible--expanded-->
     <nav class="header header--style collapsible">
       <div class="logo-toggle-sec">
         <a href="/" class="logo-link"
-          ><img src="images/handmade-logo.png" alt="hader logo" id="header-img"
+          ><img
+            src="media/img/handmade-logo.png"
+            alt="hader logo"
+            id="header-img"
         /></a>
         <i class="fa fa-bars nav__toggler"></i>
       </div>
       <div class="navbar collapsible__content">
-        <a href="#features"><i class="fa fa-check"></i> Features</a>
-        <a href="#how-it-work"><i class="fa fa-globe"></i> How It Works</a>
-        <a href="#prices"><i class="fa fa-tag"></i> Pricing</a>
-        <a href="#about&buy"><i class="fa fa-address-card"></i> About Us</a>
-        <a href="#form"><i class="fa fa-fw fa-user"></i> Sign in</a>
+        <a href="pages/features.html"><i class="fa fa-check"></i> Features</a>
+        <a href="pages/how-it-works.html"
+          ><i class="fa fa-globe"></i> How It Works</a
+        >
+        <a href="pages/prices.html"><i class="fa fa-tag"></i> Pricing</a>
+        <a href="pages/about&buy.html"
+          ><i class="fa fa-address-card"></i> About Us</a
+        >
+        <a href="pages/sign-in.html"
+          ><i class="fa fa-fw fa-user"></i> Sign in</a
+        >
       </div>
     </nav>
     <!--banner img block-->
     <div class="headding-img block">
       <img
-        src="images/handmade-logo.png"
+        src="media/img/handmade-logo.png"
         alt="hader logo"
         class="heading-img"
         data-aos="zoom-in"
@@ -81,7 +86,7 @@
         data-aos="zoom-in"
         data-aos-duration="800"
       >
-        <img src="images/Headding-photo.webp" alt="Headding-photo" />
+        <img src="media/img/Headding-photo.jpg" alt="Headding-photo" />
       </div>
     </section>
     <!--sign in section-->
@@ -125,7 +130,7 @@
         data-aos-delay="300"
         data-aos-duration="1000"
       >
-        <source src="vedios/Feature-vedio.mp4" type="video/mp4" />
+        <source src="media/video/Feature-vedio.mp4" type="video/mp4" />
         vedio illustrate how it work
       </video>
     </section>
@@ -157,7 +162,7 @@
             </p>
           </div>
           <img
-            src="images/feature-1.webp"
+            src="media/img/feature-1.jpg"
             alt=""
             class="feature__img feature__img--black-shdow"
             data-aos="fade-left"
@@ -190,7 +195,7 @@
             </p>
           </div>
           <img
-            src="images/feature-2.webp"
+            src="media/img/feature-2.jpg"
             alt=""
             class="feature__img feature__img--black-shdow"
             data-aos="fade-right"
@@ -223,7 +228,7 @@
             </p>
           </div>
           <img
-            src="images/feature-3.webp"
+            src="media/img/feature-3.jpg"
             alt=""
             class="feature__img feature__img--black-shdow"
             data-aos="fade-left"
@@ -256,7 +261,7 @@
             </p>
           </div>
           <img
-            src="images/feature-4.webp"
+            src="media/img/feature-4.jpg"
             alt=""
             class="feature__img feature__img--black-shdow"
             data-aos="fade-right"
@@ -390,7 +395,7 @@
         </form>
       </div>
       <img
-        src="images/about-photo.webp"
+        src="media/img/about-photo.jpg"
         class="illustration-vedio"
         data-aos="fade-up-left"
         data-aos-delay="300"
