@@ -26,6 +26,7 @@ body {
   font-family: "Montserrat Alternates", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   min-width: 250px;
   overflow-x: hidden;
+  margin: 0;
 }
 
 h1,
@@ -64,19 +65,20 @@ li {
 
 @media screen and (max-width: 600px) {
   h1 {
-    font-size: 2.5rem;
-  }
-
-  h2 {
     font-size: 2rem;
   }
 
+  h2 {
+    font-size: 1.8rem;
+  }
+
   h3 {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 
   p {
-    font-size: 1rem;
+    font-size: 12px;
+    padding: 0 17px;
   }
 
   li {
@@ -176,6 +178,7 @@ li {
 
 .header .nav__toggler {
   display: none;
+  padding-left: 1rem;
 }
 
 @media screen and (max-width: 1037px) {
@@ -411,6 +414,19 @@ form input[type=email] {
   justify-self: center;
 }
 
+#video {
+  padding: 1rem;
+}
+@media (max-width: 1000px) {
+  #video {
+    border-radius: 53px;
+    -webkit-border-radius: 53px;
+    -moz-border-radius: 53px;
+    -ms-border-radius: 53px;
+    -o-border-radius: 53px;
+  }
+}
+
 @media screen and (max-width: 928px) {
   .how-it-work {
     padding-left: 0.5rem;
@@ -441,6 +457,14 @@ form input[type=email] {
 /**Feature block */
 .feature-section {
   padding: 3rem 2rem;
+}
+@media (max-width: 600px) {
+  .feature-section {
+    padding: 3rem 1rem;
+  }
+  .feature-section .typo {
+    padding: 0;
+  }
 }
 
 .feature-section:nth-of-type(even) .typo {
@@ -493,7 +517,7 @@ form input[type=email] {
   -moz-column-gap: 1rem;
        column-gap: 1rem;
   row-gap: 2.3rem;
-  padding: 0 2rem;
+  padding: 0 15px;
 }
 
 .card {
@@ -518,6 +542,11 @@ form input[type=email] {
 .card:hover {
   background-color: var(--headding-color);
   border: 2px solid #000;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
 }
 
 .card:hover h2,
@@ -531,7 +560,8 @@ form input[type=email] {
   .card {
     width: 100%;
     padding: 0;
-    line-height: 2;
+    line-height: 1.5;
+    padding-bottom: 1rem;
   }
 
   .pricing.flex {
@@ -568,6 +598,7 @@ input[type=number] {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
+  transform: translateX(-31px);
 }
 
 .about-wrapper input {
@@ -601,15 +632,19 @@ input[type=number] {
     margin: auto;
     padding: 0;
   }
-
-  .buy img {
-    transform: scale(0.8);
-  }
 }
+.illustration__heading {
+  word-wrap: break-word;
+  font-size: 1.5rem;
+}
+
 @media screen and (max-width: 372px) {
-  .buy .illustration__heading,
-.buy .illustration__paragraph {
-    font-size: 1.3rem;
+  .buy .illustration__heading {
+    font-size: 1.5rem;
+  }
+
+  .buy .illustration__paragraph {
+    font-size: 1rem;
   }
 
   .buy form {
@@ -626,6 +661,13 @@ input[type=number] {
   text-align: center;
   font-size: 1rem;
   letter-spacing: 1.5;
+}
+
+.illustration-img {
+  margin: 0;
+  margin-left: 0;
+  padding: 0;
+  width: 78%;
 }
 
 .under-constructing {
